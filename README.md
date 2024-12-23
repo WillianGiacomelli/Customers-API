@@ -23,7 +23,7 @@ Este projeto é uma aplicação Node.js que se integra com o Firestore (Firebase
   "cnpj": "12345678000195",
   "name": "Empresa XYZ",
   "socialReason": "Social Reason",
-  "telefone": "123456789",
+  "phone": "123456789",
 }
 ```
 
@@ -47,7 +47,7 @@ GET /get-customer/12345678000195
   "cnpj": "12345678000195",
   "name": "Empresa XYZ",
   "socialReason": "Social Reason",
-  "telefone": "123456789",
+  "phone": "123456789",
 }
 ```
 
