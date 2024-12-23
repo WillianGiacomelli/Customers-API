@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "8fb01d8b-99e0-4b2b-a482-962c991fad5e",
+		"name": "Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28418174"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "ABCDEFGH123456"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:45000/capital/get-customer?cnpj=05454545454",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "45000",
+					"path": [
+						"capital",
+						"get-customer"
+					],
+					"query": [
+						{
+							"key": "cnpj",
+							"value": "05454545454"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "ABCDEFGH123456"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"socialReasl\": \"socialReasl\",\r\n    \"cnpj\": \"12345678000195\",\r\n    \"name\": \"Empresa XYZ\",\r\n    \"phone\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:45000/capital/post-customer"
+			},
+			"response": []
+		}
+	]
+}
