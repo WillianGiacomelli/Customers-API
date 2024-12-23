@@ -7,7 +7,7 @@ Este projeto é uma aplicação Node.js que se integra com o Firestore (Firebase
 ## Funcionalidades
 
 ### 1. **Criar Cliente**
-- **Endpoint**: `/create-customer`
+- **Endpoint**: `/post-customer`
 - **Método HTTP**: `POST`
 - **Descrição**: Permite criar um novo cliente no banco de dados.
 - **Campos exigidos**:
@@ -28,7 +28,7 @@ Este projeto é uma aplicação Node.js que se integra com o Firestore (Firebase
 ```
 
 ### 2. **Consultar Cliente por CNPJ**
-- **Endpoint**: `/get-customer/{cnpj}`
+- **Endpoint**: `/get-customer?cnpj`
 - **Método HTTP**: `GET`
 - **Descrição**: Permite buscar um cliente pelo seu CNPJ.
 - **Parâmetros**:
@@ -37,7 +37,7 @@ Este projeto é uma aplicação Node.js que se integra com o Firestore (Firebase
 **Exemplo de Requisição**:
 
 ```bash
-GET /get-customer/12345678000195
+GET /get-customer?cnpj=12345678000195
 ```
 
 **Resposta Exemplo**:
